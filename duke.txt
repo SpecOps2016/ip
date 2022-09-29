@@ -1,2 +1,1 @@
-[T][X] borrow book
 [D][X] return book (by: Feb 03 2020)

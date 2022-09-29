@@ -6,7 +6,19 @@ import components.TaskList;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
+/**
+ * Represents a command to add a deadline task.
+ */
 public class DeadlineCommand implements Command {
+
+  /**
+   * Executes command to add a deadline task.
+   *
+   * @param taskList TaskList object.
+   * @param storage Storage object.
+   * @param input String representation of user input.
+   * @throws DukeException If user input is incoherent.
+   */
   @Override
   public String execute(TaskList taskList, Storage storage, String input) throws DukeException {
     if (input.equals("deadline")) {

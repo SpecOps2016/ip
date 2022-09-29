@@ -13,8 +13,6 @@ public class Ui {
 
   /**
    * shows error when there is one during loading.
-   *
-   *
    */
   public void showLoadingError() {
     System.out.println("duke.txt not found!");

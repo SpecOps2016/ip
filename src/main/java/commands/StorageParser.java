@@ -6,7 +6,17 @@ import components.Todo;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
+/**
+ * Represents a StorageParser to parse the storage.
+ */
 public class StorageParser {
+
+  /**
+   * Parses the storage.
+   *
+   * @param storage Storage object.
+   * @param line String representation of lines in storage.
+   */
   public static void parseToDo(String line, Storage storage) {
     if (line.contains("[T]")) {
       if (line.contains("[X]")) {

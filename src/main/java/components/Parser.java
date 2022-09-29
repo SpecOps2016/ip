@@ -45,6 +45,7 @@ public class Parser {
    *
    * @param line string representation of user input.
    * @throws DukeException If user input is incoherent.
+   * @return Command object.
    */
   public static Command readCommands(String line) throws DukeException {
     if (line.equals("bye")) {

@@ -6,7 +6,18 @@ import components.TaskList;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
+/**
+ * Represents a command to add an event task.
+ */
 public class EventCommand implements Command {
+
+  /** Executes command to add an event task.
+   *
+   * @param taskList TaskList object.
+   * @param storage Storage object.
+   * @param input String representation of user input.
+   * @throws DukeException If user input is incoherent.
+   */
   @Override
   public String execute(TaskList taskList, Storage storage, String input) throws DukeException {
     if (input.equals("deadline")) {

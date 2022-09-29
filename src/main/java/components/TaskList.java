@@ -82,7 +82,7 @@ public class TaskList {
    * mark task to completed or not.
    *  @param index  index of task to be marked.
    * @param status mark task to be completed with true or not completed with false.
-   * @return
+   * @return string of task that is marked.
    */
   public String setTaskStatus(int index, boolean status) throws DukeException {
     try {
